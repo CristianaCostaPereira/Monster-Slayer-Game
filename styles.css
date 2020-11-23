@@ -8,12 +8,14 @@ html {
 
 body {
   margin: 0;
+  background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/19bdef00-090f-489b-a274-d2808eaad0d6/d88elxm-17833f90-6e21-45a9-8e05-1c9687c78eb9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTliZGVmMDAtMDkwZi00ODliLWEyNzQtZDI4MDhlYWFkMGQ2XC9kODhlbHhtLTE3ODMzZjkwLTZlMjEtNDVhOS04ZTA1LTFjOTY4N2M3OGViOS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.DanXHKQufSIZkbpyOJa-7ARD_WF7blVqb1AeNGqJvAM");
+  background-repeat: no-repeat;
 }
 
 header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
   padding: 0.5rem;
-  background-color: #880017;
+  background-color: #1327426b;
   color: white;
   text-align: center;
   margin-bottom: 2rem;
@@ -34,7 +36,7 @@ section {
 }
 
 .healthbar__value {
-  background-color: #00a876;
+  background-color: #8c0505;
   width: 100%;
   height: 100%;
 }
@@ -45,6 +47,7 @@ section {
   margin: 1rem auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 12px;
+  background: #ffffff8c;
 }
 
 #monster h2,
@@ -62,13 +65,13 @@ section {
 
 button {
   font: inherit;
-  border: 1px solid #88005b;
-  background-color: #88005b;
+  /* border: 1px solid #88005b; */
+  background-color: #9087878c;
   color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
   margin: 1rem;
-  width: 12rem;
+  width: 14rem;
   cursor: pointer;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
@@ -79,13 +82,13 @@ button:focus {
 
 button:hover,
 button:active {
-  background-color: #af0a78;
-  border-color: #af0a78;
+  background-color: #353535;
+  border-color: #0e0d0ec4;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #cccccce3;
   border-color: #ccc;
   box-shadow: none;
   color: #3f3f3f;

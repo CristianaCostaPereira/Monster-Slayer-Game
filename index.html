@@ -38,21 +38,21 @@
 
       <section class="container" v-if="winner">
         <h2>Game Over!</h2>
-        <h3 v-if="winner === 'monster'">You lost!</h3>
-        <h3 v-else-if="winner === 'player'">You won!</h3>
-        <h3 v-else="winner === 'draw'">It's a draw!</h3>
-        <button v-on:click="startGame">Start New Game</button>
+        <h3 v-if="winner === 'monster'">You lost ☠️ !</h3>
+        <h3 v-else-if="winner === 'player'">You won 🧙🏼‍♂️ !</h3>
+        <h3 v-else="winner === 'draw'">It's a draw 🏳️ !</h3>
+        <button v-on:click="startGame">Start New Game 🔰</button>
       </section>
 
       <section id="controls" v-if="!winner">
-        <button v-on:click="attackMonster">ATTACK</button>
-        <button v-bind:disabled="mayUseSpecialAttack" v-on:click="specialAttackMonster">SPECIAL ATTACK</button>
-        <button v-on:click="healPlayer">HEAL</button>
-        <button v-on:click="surrender">SURRENDER</button>
+        <button v-on:click="attackMonster">ATTACK 🗡️</button>
+        <button v-bind:disabled="mayUseSpecialAttack" v-on:click="specialAttackMonster">SPECIAL ATTACK ⚔️</button>
+        <button v-on:click="healPlayer">HEAL 🍖</button>
+        <button v-on:click="surrender">SURRENDER 🏳️</button>
       </section>
       
       <section id="log" class="container">
-        <h2>Battle Log</h2>
+        <h2>Battle Log ⚜️</h2>
         <ul>
           <li v-for="logMessage in logMessages">
             <!-- Below I want to access logMessage and check if actionBy is equal to player, in which case we want to print 'Player' with capital 'P', otherwise it will be the monster -->
