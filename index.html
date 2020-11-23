@@ -53,7 +53,25 @@
       
       <section id="log" class="container">
         <h2>Battle Log</h2>
-        <ul></ul>
+        <ul>
+          <li v-for="logMessage in logMessages">
+            <!-- Below I want to access logMessage and check if actionBy is equal to player, in which case we want to print 'Player' with capital 'P', otherwise it will be the monster -->
+            <span
+              :class="{'log--player': logMessage.actionBy === 'player', 'log--monster': logMessage.actionBy === 'monster'}">
+              {{ logMessage.actionBy === 'player' ? 'Player' : 'Monster'}}
+            </span>
+
+            <!-- Holds the type of action that happened, when we healed ourselves -->
+            <span v-if="logMessage.actionType === 'heal'">
+              heals himself for <span class="log--heal">{{ logMessage.actionValue }}</span>
+            </span>
+
+            <!-- logMessage when dealing damage -->
+            <span v-else>
+              attacks and deals <span class="log--damage">{{ logMessage.actionValue }}</span>
+            </span>
+          </li>
+        </ul>
       </section>
     </div>
   </body>
