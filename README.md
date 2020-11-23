@@ -14,4 +14,4 @@ If the monster is to strong, heal yourself so you do not lose your brave quest.
 
 But, if you see your defeat ahead, you can succumb by `surrender` to the Monster and his power.
 
-A battle log will display all of your fearless actions throughout each round, allowing you to keep track of the damage you dealt, the damage you receive and for how much you healed.
+A battle log will display all of your fearless actions throughout each round, allowing you to keep track of the damage you dealt, the damage you received and for how much you healed.

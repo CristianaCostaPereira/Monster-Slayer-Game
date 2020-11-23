@@ -15,10 +15,16 @@ const app = Vue.createApp({
     // health bars update when the player and monster healths changes
     computed: {
         monsterBarStyle() {
+            if (this.monsterHealth < 0) {
+                return { width: '0%' }; // sets health bars to exaxtly zero if the game is over
+            }
            return {width: this.monsterHealth + '%'};
         },
 
         playerBarStyle() {
+            if (this.playerHealth < 0) {
+                return { width: '0%' };
+            }
             return {width: this.playerHealth + '%'};
         },
 
@@ -50,6 +56,13 @@ const app = Vue.createApp({
     },
 
     methods: {
+        startGame() {
+            this.playerHealth = 100,
+            this.monsterHealth = 100,
+            this.currentRound = 0,
+            this.winner = null
+        },
+
         attackMonster() {
             this.currentRound++; // changes the round, each time we made an action
             const attackValue = getRandomValue(5, 12);
@@ -84,6 +97,10 @@ const app = Vue.createApp({
             }
             this.attackPlayer();
         },
+
+        surrender() {
+            this.winner = 'monster';
+        }
     },
 });
 

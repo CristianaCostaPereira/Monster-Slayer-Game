@@ -41,13 +41,14 @@
         <h3 v-if="winner === 'monster'">You lost!</h3>
         <h3 v-else-if="winner === 'player'">You won!</h3>
         <h3 v-else="winner === 'draw'">It's a draw!</h3>
+        <button v-on:click="startGame">Start New Game</button>
       </section>
 
-      <section id="controls">
+      <section id="controls" v-if="!winner">
         <button v-on:click="attackMonster">ATTACK</button>
         <button v-bind:disabled="mayUseSpecialAttack" v-on:click="specialAttackMonster">SPECIAL ATTACK</button>
         <button v-on:click="healPlayer">HEAL</button>
-        <button>SURRENDER</button>
+        <button v-on:click="surrender">SURRENDER</button>
       </section>
       
       <section id="log" class="container">
