@@ -39,7 +39,7 @@
       <section id="controls">
         <button v-on:click="attackMonster">ATTACK</button>
         <button v-bind:disabled="mayUseSpecialAttack" v-on:click="specialAttackMonster">SPECIAL ATTACK</button>
-        <button>HEAL</button>
+        <button v-on:click="healPlayer">HEAL</button>
         <button>SURRENDER</button>
       </section>
       
