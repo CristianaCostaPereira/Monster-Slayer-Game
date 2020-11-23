@@ -10,6 +10,17 @@ const app = Vue.createApp({
         };
     },
 
+    // health bars update when the player and monster healths changes
+    computed: {
+        monsterBarStyle() {
+           return {width: this.monsterHealth + '%'};
+        },
+
+        playerBarStyle() {
+            return {width: this.playerHealth + '%'};
+        }
+    },
+
     methods: {
         attackMonster() {
             const attackValue = getRandomValue(5, 12);
