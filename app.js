@@ -7,7 +7,8 @@ const app = Vue.createApp({
         return {
             playerHealth: 100,
             monsterHealth: 100,
-            currentRound: 0
+            currentRound: 0,
+            winner: null
         };
     },
 
@@ -21,10 +22,30 @@ const app = Vue.createApp({
             return {width: this.playerHealth + '%'};
         },
 
-        // So we disable the button if the division of three does not leave a remainder of zero
-        // Make sure that we only have access to the special attack every three rounds
+        // Makes sure that we only have access to the special attack every three rounds
         mayUseSpecialAttack() {
             return this.currentRound % 3 !== 0;
+        }
+    },
+
+    watch: {
+        playerHealth(value) {
+            if (value <= 0 && this.monsterHealth <= 0) {
+                // Sets a draw
+                this.winner = 'draw';
+            } else if (value <= 0) {
+                // Player lost
+                this.winner = 'monster';
+            }
+        },
+        monsterHealth(value) {
+            if (value <= 0 && this.playerHealth <= 0) {
+                // Sets draw
+                this.winner = 'draw';
+            } else if (value <= 0) {
+                // Monster lost
+                this.winner = 'player';
+            }
         }
     },
 
