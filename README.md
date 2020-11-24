@@ -1,5 +1,5 @@
 # Monster-Slayer-Game :bow_and_arrow:
-A project built in <ins>**Vue.js**</ins> within the scope of the <ins>Udemy Vue.js</ins> *(version 3)* course.
+The first project built in <ins>**Vue.js**</ins> within the scope of the <ins>Udemy Vue.js</ins> *(version 3)* course.
 
 <img src="https://cdn.pixabay.com/photo/2015/10/30/18/14/dragon-1014565_960_720.jpg" width="1000" height="250">
 

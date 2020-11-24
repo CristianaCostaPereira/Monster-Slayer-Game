@@ -107,16 +107,20 @@ button:disabled {
 
 .log--player {
   color: #7700ff;
+  font-weight: 700;
 }
 
 .log--monster {
-  color: #da8d00;
+  color: #946208;
+  font-weight: 700;
 }
 
 .log--damage {
   color: red;
+  font-weight: 700;
 }
 
 .log--heal {
   color: green;
+  font-weight: 700;
 }
