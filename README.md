@@ -14,10 +14,11 @@ The Monster will fight back! Beware 🛡️ !
 
 If the Monster is to strong, `heal 🍖` yourself so you do not lose your brave quest.
 
-But, if you see your defeat ahead, you can either succumb by `surrender 🏳️` to this powers or accept it and perish ☠️ to the Monster's roar.
+But, if you see your defeat ahead, you can either succumb by `surrender 🏳️` to his powers or accept your doom and perish ☠️ to the Monster's roar.
 
-A battle log will display all of your fearless actions throughout each round, allowing you to keep track of the damage you dealt, the damage you received and for how much you healed.
+A battle log ⚜️ will display all of your fearless actions throughout each round, allowing you to keep track of the damage you dealt, the damage you received and for how much you healed.
+
+Are you willing to accept it 📜?
 
 ## Author
-
 [Cristiana Costa Pereira](https://github.com/CristianaCostaPereira) :octocat:
