@@ -3,6 +3,12 @@ The first project built in <ins>**Vue.js**</ins> within the scope of the <ins>Ud
 
 <img src="https://cdn.pixabay.com/photo/2015/10/30/18/14/dragon-1014565_960_720.jpg" width="1000" height="250">
 
+
+## Demo
+[Monster Slayer Demo](https://monster-slayer-quest.netlify.app/)
+
+<br>
+
 ## Introduction & Gameplay
 To all of the brave who dares accept this quest, I warn you: you will be battling an epic Monster to see which one of you will end victorious.
 
